@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.radiusL-25 {
+    border-top-left-radius: 25%;
+}
+.radius-lb {
+    border-bottom-left-radius: 25%;
+}
+.imgposition2 {
+    position:relative;
+    bottom: 42rem;
+}
+.positionwaveswhite {
+    position:relative;
+    bottom: 64rem;
+    left: -5rem;
+    width: 33rem;
+    }
+.aboutrightposition {
+    position: relative;
+    top: -28rem;
+}
+.layerproject {
+    top: 99rem;
+}
+.sizedivabout1 {
+    height: 24rem;
+}
+

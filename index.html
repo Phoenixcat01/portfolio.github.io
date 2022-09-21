@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth duration-75">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio with Tailwindcss</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/input.css">
+    <style>
+
+      
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-defaultgrey">
+
+    <!-- awal navbar -->
+    <div class="">
+      <header
+        class="sticky z-50 top-0 left-0 flex w-full items-center">
+        <div class="w-full h-[100px] backdrop-blur-md absolute"></div>
+        <div class="container relative m-auto">
+          <div class="relative flex items-center">
+            <div class="ml-5 mr-9">
+              <a href="#home" class="block my-6 text-2xl font-bold text-black">
+                Rifan<span class="text-default">Tr</span>
+              </a>
+            </div>
+            <nav
+              class="absolute right-4 top-full hidden w-4/5 max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent text-center align-middle content-center pl-80 box-border"
+            >
+              <ul class="flex">
+                <li class="">
+                  <a
+                    href="#home"
+                    class="mx-7 flex my-2 p-1 text-base font-medium text-dark hover:text-white hover:bg-[#6FD067] hover:rounded-md duration-200">
+                    home
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href="#about"
+                    class="mx-7 flex my-2 p-1 text-base font-medium text-dark hover:text-white hover:bg-[#6FD067] hover:rounded-md duration-200">
+                    about
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#project"
+                    class="mx-7 flex my-2 p-1 text-base font-medium text-dark hover:text-white hover:bg-[#6FD067] hover:rounded-md duration-200">
+                    project
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#footer"
+                    class="mx-7 flex my-2 p-1 text-base font-medium text-dark hover:text-white hover:bg-[#6FD067] hover:rounded-md duration-200">
+                    Contack
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="w-1/4 pr-5">
+              <form>
+                <label
+                  for="default-search"
+                  class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300"
+                >
+                  Search
+                </label>
+                <div class="relative w-full">
+                  <div
+                    class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+                  >
+                    <svg
+                      class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <input
+                    type="search"
+                    id="default-search"
+                    class="block px-4 pl-10 py-3 w-full text-sm text-gray-900 rounded-full border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white- dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Search"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="text-white absolute right-0 bottom-0  bg-green-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-3 dark:bg-default dark:hover:bg-green-700 dark:focus:ring-blue-800"
+                  >
+                    Search
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- akhir navbar -->
+
+      <!-- hero section -->
+      <section id="home" class="pt-32 dark:bg-dark">
+        <div class="container">
+          <div class="flex">
+            <div class="w-full self-center pl-20 pr-36 lg:w-1/2 block">
+              <h1 class="font-semibold text-slate-900 text-5xl my-8">
+                Hi! i'am <span class="text-green-400">Riza Rifantara</span>
+                <br />
+                i'am junior web developer
+              </h1>
+              <p class="my-4">
+                "Don't believe too much, it'll hurt too much when you're disappointed.
+                so just live everything according to the portion. <br> because that is live."
+              </p>
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/Phoenixcat01"
+                    class="p-2 mt-4 inline-block bg-white rounded-full border-2 border-green-500 hover:bg-green-500 hover:text-white hover:shadow-md">
+                    <img src="https://img.icons8.com/windows/32/000000/new-post.png" class="float-left pr-2"/> email
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Phoenixcat01"
+                    class="p-2 mt-4 inline-block border-yellow-900 border-2 rounded-full hover:bg-yellow-900 hover:text-white"
+                  >
+                    Download CV
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full self-end pr-1 lg:w-1/2">
+              <div class="relative mt-10 lg:right-0 lg:mt-9">
+                <a href="https://www.youtube.com/c/WebProgrammingUNPAS" target="_blank">
+                  <div class="absolute z-40 w-20 h-20 bg-[#6FD067] top-64 right-80 rounded-full">
+                    <img src="https://img.icons8.com/dotty/50/000000/youtube-play.png" class="m-auto pt-4"/>
+                  </div>
+                </a>
+                <img
+                  src="./item/huston-wilson-WyDr1KFS23Y-unsplash-removebg-preview.png"
+                  alt="foto profil"
+                  class="relative z-10 mx-auto w-2/5 -top-0"
+                />
+                <div
+                  class="w-2/5 h-3/4 bg-green-500 absolute bottom-11 left-1/3 -translate-x-1/2 md:scale-125 radiusL-25"
+                ></div>
+                <div class="w-52 h-52 bg-[#5D4A4A] rounded-full absolute top-32 right-40"></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-3/12 h-10 my-5 bg-yellow-200 rounded-full relative -left-5">
+            <div class="flex justify-evenly pt-2">
+              <a class="duration-200 hover:w-8 hover:h-8 hover:pt-[5.5px] hover:pl-[5.5px] hover:bg-white hover:rounded-full">
+                <img src="./item/instagram.png" alt="" class="w-5">
+              </a>
+              <a class="duration-200 hover:w-8 hover:h-8 hover:pt-[5.5px] hover:pl-[5.5px] hover:bg-white hover:rounded-full">
+                <img src="./item/linkedin.png" alt="" class="w-5">
+              </a>
+              <a class="duration-200 hover:w-8 hover:h-8 hover:pt-[5.5px] hover:pl-[5.5px] hover:bg-white hover:rounded-full">
+                <img src="./item/facebook.png" alt="" class="w-5">
+              </a>
+              <a class="duration-200 hover:w-8 hover:h-8 hover:pt-[5.5px] hover:pl-[5.5px] hover:bg-white hover:rounded-full">
+                <img src="./item/twitter.png" alt="" class="w-5">
+              </a>
+              <a class="duration-200 hover:w-8 hover:h-8 hover:pt-[5.5px] hover:pl-[5.5px] hover:bg-white hover:rounded-full">
+                <img src="./item/youtube.png" alt="" class="w-5">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- akhir hero section -->
+
+      <!-- about section -->
+      <section id="about" class="relative bg-default">
+        <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#B9CBCB" fill-opacity="1" d="M0,128L60,117.3C120,107,240,85,360,90.7C480,96,600,128,720,165.3C840,203,960,245,1080,229.3C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        <h1 class="absolute top-16 left-44 text-5xl font-bold text-amber-800">About Me</h1>
+        <div class="flex justify-evenly gap-8">
+          <div class="w-2/5 h-96 relative bg-yellow-600 rounded-3xl hover:animate-bounce">
+            <div class="absolute top-14 left-28 w-96">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFFFFF" d="M39.4,-56.8C53,-52.5,67.6,-45,72.3,-33.4C77,-21.8,71.9,-6.1,67.8,8.4C63.6,23,60.5,36.4,51.7,42.5C42.8,48.6,28.2,47.5,16.1,47.8C4.1,48,-5.5,49.7,-19,51.7C-32.5,53.7,-50,56.1,-61.8,49.6C-73.6,43.1,-79.6,27.7,-79.3,13C-78.9,-1.7,-72.1,-15.8,-60.6,-22.1C-49,-28.4,-32.7,-27,-21.8,-32.5C-10.9,-38.1,-5.5,-50.6,3.7,-56.4C12.8,-62.1,25.7,-61,39.4,-56.8Z" transform="translate(100 100)" />
+              </svg>
+            </div>
+            <div class="w-48 sizedivabout1 bg-defaultgrey absolute -top-14 left-48 radius-lb">
+            </div>
+            <img src="./item/Polygon 1.png" alt="" class="absolute w-28 h-28 -top-5 right-36 rotate-12">
+            <img src="./item/adam-birkett-z_MlmEelJpE-unsplash-removebg-preview.png" alt="" class="absolute -top-72 left-28">
+            <div class="w-24 h-24 bg-transparent border-4 rounded-full border-amber-800 absolute -top-24 left-40"></div>
+            <div class="">
+            </div>
+          </div>
+          <div class="w-2/5 pt-5">
+            <h1 class="text-center font-semibold text-4xl my-5">Lorem</h1>
+            <p class="text-center tracking-widest leading-7">iam is junior web developer, as muslim religion iam domicile at bogor west java and student at polytechnic IDN (islamic development Network) my age is young iam born at kediri east java, date 17 tuesday in mont december 2002 and iam graduate of high school of almadinah solo, and junior at that as religion major, and iam is friendly person, like to socialize or sociable person, uptodate person about IT, and produktif person. and a memorizer of the quran and hadits rosul.</p>
+          </div>
+        </div>
+      </section>
+      <!-- akhir about section -->
+
+      <!-- project section -->
+      <section id="project">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#6FD067" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,224C384,213,480,139,576,122.7C672,107,768,149,864,149.3C960,149,1056,107,1152,101.3C1248,96,1344,128,1392,144L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <h1 class="text-5xl mb-5 font-bold text-black text-center">My <span class="text-green-400">Project</span></h1>
+        <div class="relative w-full h-[800px]">
+          <img src="./item/polygon slice.png" alt="" class="absolute -top-36 -left-5">
+          <a href="https://github.com/Phoenixcat01" target="_blank"><div class="absolute w-96 h-96 rounded-full bg-[#E9F36D] duration-200 hover:bg-yellow-400 hover:shadow-md hover:drop-shadow-2xl hover:blur-2xl cursor-pointer top-52 left-[560px]"></div></a>
+          
+          <div class="absolute w-72 h-96 border-4 border-white right-32 -top-20"></div>
+          <div class="absolute w-72 h-72 border-4 border-white -bottom-3 left-32"></div>
+          <div class="absolute w-[550px] h-[250px] border-4 border-white right-20 bottom-36"></div>
+          <a href="https://www.figma.com/file/ROaOOZN5Ea3vj7VzcdPcbX/Untitled?node-id=0%3A1" target="_blank">
+            <img src="./item/figma dekstop design.jpg" alt="" class="w-1/3 absolute top-40 right-56 drop-shadow-2xl rounded-3xl">
+          </a>
+          <a href="https://phoenixcat01.github.io/" target="_blank">
+            <img src="./item/Screenshot 2022-09-19 195011.png" alt="" class="w-1/3 absolute top-32 left-60 drop-shadow-2xl rounded-3xl">
+          </a>
+          <a href="https://phoenixcat01.github.io/phoenixcat01LTB.github.io/" target="_blank">
+            <img src="./item/Screenshot 2022-09-19 195141.png" alt="" class="w-1/3 absolute bottom-10 left-64 drop-shadow-2xl rounded-3xl">
+          </a>
+          <a href="./item/wallpaperflare.com_wallpaper (2).jpg" target="_blank"><img src="./item/wallpaperflare.com_wallpaper (2).jpg" alt="" class="w-1/3 absolute bottom-20 right-52 drop-shadow-2xl rounded-3xl"></a>
+        </div>
+      </section>
+
+      <section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L48,133.3C96,139,192,149,288,138.7C384,128,480,96,576,96C672,96,768,128,864,154.7C960,181,1056,203,1152,186.7C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <div class="bg-white w-full h-96">
+          <h1 class="text-5xl mb-24 font-bold text-black text-center">My <span class="text-green-400">Skill</span></h1>
+          <div class="flex justify-evenly flex-wrap">
+            <!-- html -->
+            <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="" class="w-24"/>
+            <!-- css -->
+            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="" class="w-24" />
+            <!-- sass -->
+            <img src="https://img.icons8.com/color/48/000000/sass.png" alt="" class="w-24"/>
+            <!-- tailwind -->
+            <img src="https://img.icons8.com/fluency/48/000000/tailwind_css.png" alt="" class="w-24"/>
+            <!-- bootstrap -->
+            <img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="" class="w-24"/>
+            <!-- js -->
+            <img src="https://img.icons8.com/fluency/48/000000/javascript.png" alt="" class="w-24"/>
+            <!-- figma -->
+            <img src="https://img.icons8.com/color/48/000000/figma--v1.png" alt="" class="w-20"/>
+          </div>
+        </div>
+      </section>
+      <!-- akhir project section -->
+
+      <!-- footer section -->
+      <footer id="footer" class="relative">
+        <svg class="absolute rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,288L0,160L130.9,160L130.9,288L261.8,288L261.8,192L392.7,192L392.7,0L523.6,0L523.6,224L654.5,224L654.5,0L785.5,0L785.5,288L916.4,288L916.4,128L1047.3,128L1047.3,0L1178.2,0L1178.2,256L1309.1,256L1309.1,128L1440,128L1440,320L1309.1,320L1309.1,320L1178.2,320L1178.2,320L1047.3,320L1047.3,320L916.4,320L916.4,320L785.5,320L785.5,320L654.5,320L654.5,320L523.6,320L523.6,320L392.7,320L392.7,320L261.8,320L261.8,320L130.9,320L130.9,320L0,320L0,320Z"></path></svg>
+        <div class="w-full bg-amber-900 h-[850px] flex justify-around pt-[440px]">
+          <div class="">
+            <p>PT Dewaweb <br>AKR Tower – 16th Floor <br>Jl. Panjang no. 5, Kebon Jeruk <br>Jakarta11530</p>
+            <p>Email: email <br>Phone: (021) 2212-4702 <br>Mobile: 0813-1888-4702</p>
+            <div class="flex justify-between pt-5">
+              <a class="duration-200 hover:w-8 hover:h-8 hover:pt-[5.5px] hover:pl-[5.5px] hover:bg-white hover:rounded-full">
+                <img src="./item/instagram.png" alt="" class="w-5">
+              </a>
+              <a class="duration-200 hover:w-8 hover:h-8 hover:pt-[5.5px] hover:pl-[5.5px] hover:bg-white hover:rounded-full">
+                <img src="./item/linkedin.png" alt="" class="w-5">
+              </a>
+              <a class="duration-200 hover:w-8 hover:h-8 hover:pt-[5.5px] hover:pl-[5.5px] hover:bg-white hover:rounded-full">
+                <img src="./item/facebook.png" alt="" class="w-5">
+              </a>
+              <a class="duration-200 hover:w-8 hover:h-8 hover:pt-[5.5px] hover:pl-[5.5px] hover:bg-white hover:rounded-full">
+                <img src="./item/twitter.png" alt="" class="w-5">
+              </a>
+              <a class="duration-200 hover:w-8 hover:h-8 hover:pt-[5.5px] hover:pl-[5.5px] hover:bg-white hover:rounded-full">
+                <img src="./item/youtube.png" alt="" class="w-5">
+              </a>
+            </div>
+          </div>
+          <div class="">
+            <p>COMPANY</p>
+            <p>About Us <br>Media Kit <br>Blog <br>Careers</p>
+            <p>LAYANAN</p>
+            <p>Domain Murah <br>Cloud Hosting <br>Cloud Server (VPS) <br>Dewacloud PaaS <br>Dewaguard <br> Cyber Security <br>Cloud Backup <br>SSL Certificates <br>Server CBT (E-Learning)</p>
+          </div>
+          <div class="">
+            <p>RESELLER</p>
+            <p>Affiliate Program <br>VIP Partner Program</p>
+            <p>SUPPORT</p>
+            <p>Status Network <br>Buka Tiket Support</p>
+            <p>OTHERS</p>
+            <p>Promo Dewaweb <br>Dewatalks <br>Hosting Gratis untuk <br> Non-Profit</p>
+          </div>
+        </div>
+        <div class="w-full h-10 flex justify-between items-center">
+          <p class="pl-5 pt-1">Copyright &copy; 2022 Rifantara. All Rights Reserved.</p>
+          <p class="pr-5 pt-1">Terms of Service Service Level Agreement</p>
+        </div>
+      </footer>
+      <!-- akhir footer section -->
+
+    </div>
+  </body>
+</html>
